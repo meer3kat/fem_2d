@@ -1,4 +1,4 @@
-function mass_res = mass_loss(p, t, e, xi, x_initial)
+function mass_res = mass_loss(p, t, xi, x_initial)
 nt = size(t,2);
 mass_res = 0; 
 

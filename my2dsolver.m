@@ -53,7 +53,6 @@ hold on;
 plot(x, fit);
 text(-1.5,0,['slope = ',num2str(linearfits(1))]);
 xlabel('log(h)');
-
 ylabel('log(error)');
 title('error analysis and convergence rate for energy norm');
 legend('error in the form of energy norm');
