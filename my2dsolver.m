@@ -48,6 +48,7 @@ end
 linearfits = polyfit(log(h), log(totalerr), 1);
 x = [0 -3.5];
 fit = linearfits(1)*x + linearfits(2);
+fig_err = figure('position', [0 0 650 500]);
 scatter(log(h), log(totalerr));
 hold on;
 plot(x, fit);
@@ -57,7 +58,7 @@ ylabel('log(error)');
 title('error analysis and convergence rate for energy norm');
 legend('error in the form of energy norm');
 grid on;
-saveas(gcf,'energynorm.png');
+saveas(fig_err,'energynorm.png');
 hold off;
 
 %plot of the solution 
